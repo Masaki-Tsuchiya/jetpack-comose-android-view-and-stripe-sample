@@ -1,6 +1,7 @@
 package com.example.myapplication
 
 import android.os.Bundle
+import android.view.View
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -39,6 +40,7 @@ fun Greeting(name: String) {
 
 @Composable
 fun CardNumberEditText() {
+    // Type mismatch: inferred type is CardNumberEditText but View was expected
     AndroidView(factory = { context -> CardNumberEditText(context) })
 }
 
